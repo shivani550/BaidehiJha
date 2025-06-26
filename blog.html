@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Threads Blog - BaidehiJha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <style>
+    body {
+      background-color: #fdfaf4;
+      font-family: 'Ancizar Serif', serif;
+      color: #4a3d2f;
+    }
+
+    .blog-header {
+      text-align: center;
+      padding: 70px 20px 40px;
+      background: var(--main-color);
+    }
+
+    .blog-header h1 {
+      font-size: 2.8rem;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-header p {
+      font-size: 1.2rem;
+      color: var(--second-color);
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 40px 100px;
+    }
+
+    .blog-post {
+      background: white;
+      box-shadow: var(--box-shadow);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .blog-post-content {
+      padding: 20px;
+    }
+
+    .blog-post-content h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: var(--text-color);
+    }
+
+    .blog-post-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .blog-post-content .read-more {
+      margin-top: 1rem;
+      display: inline-block;
+      color: var(--second-color);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .blog-container {
+        padding: 20px;
+      }
+    }
+  </style>
+  <script>
+  function toggleMore(link) {
+    const moreText = link.previousElementSibling;
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+      moreText.style.display = "inline";
+      link.textContent = "Read Less ←";
+    } else {
+      moreText.style.display = "none";
+      link.textContent = "Read More →";
+    }
+  }
+</script>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">BaidehiJha</a>
+    <ul class="navbar">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html" target="_blank">ABOUT</a></li>
+      <li><a href="index.html#SHOP">SHOP</a></li>
+      <li><a href="index.html#new">NEW ARRIVAL</a></li>
+      <li><a href="blog.html"  class="active">ROYAL THREADS</a></li>
+    </ul>
+    <div class="header-icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-heart" id="heart"></i>
+      <i class="bx bx-search-alt" id="search-icon"></i>
+      <i class="bx bx-cart" id="cart-icon"></i>
+      <i class="bx bx-user" id="user"></i>
+    </div>
+  </header>
+
+  <section class="blog-header">
+    <h1>Royal Threads</h1>
+    <p>Stories stitched in elegance — discover the craft, the tradition, the magic.</p>
+  </section>
+
+  <section class="blog-container">
+    <div class="blog-post">
+      <img src="home4.jpg" alt="Mughal Elegance">
+      <div class="blog-post-content">
+        <h2>Mughal Reverie: The Art of Regal Embroidery</h2>
+        <p>Step into the era of Mughal grandeur with handcrafted pieces inspired by timeless embroidery styles and rich gold threads.</p>
+         <span class="more-text" style="display: none;">
+      Inspired by rich gold threads and timeless artistry, these designs embody the elegance of royal fashion. Each motif is drawn from historical archives, made to connect past legacies with modern styling.
+    </span>
+        <a href="#" class="read-more" onclick="toggleMore(this); return false;">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="home6.jpg" alt="Behind the Threads">
+      <div class="blog-post-content">
+        <h2>Behind the Threads: Crafting ‘Saanjh Tara’</h2>
+        <p>Meet the artisans who brought 'Saanjh Tara' to life. From moodboards to final stitch — a journey of tradition and style.</p>
+        <span class="more-text" style="display: none;">Our Royal Threads collection features Banarasi styles blended with contemporary cuts. From wedding wardrobes to modern festive fashion, these pieces bring the richness of heritage with modern sophistication.</span>
+        <a href="#" class="read-more"onclick="toggleMore(this); return false;">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="home8.jpg" alt="Fabric Stories">
+      <div class="blog-post-content">
+        <h2>Choosing the Right Fabric for Every Occasion</h2>
+        <p>Silk, georgette, or cotton? We break down the best fabrics to wear for weddings, festivals, and everyday elegance.</p>
+        <span class="more-text" style="display: none;">Originating from Lucknow, Chikankari is more than just embroidery—it's a reflection of patience and art. Our latest drops include pastel-hued suits with intricate threadwork, ideal for both daily elegance and festive charm.</span>
+        <a href="#" class="read-more"onclick="toggleMore(this); return false;">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <img src="home5.jpg" alt="Royal Hues">
+      <div class="blog-post-content">
+        <h2>Color Diaries: What Makes Royal Hues So Special?</h2>
+        <p>From ivory golds to deep maroons — why certain colors feel more royal and how to wear them gracefully.</p>
+        <span class="more-text" style="display: none;">Inspired by rich gold threads and timeless artistry, these designs embody the elegance of royal fashion. Each motif is drawn from historical archives, made to connect past legacies with modern styling</span>
+        <a href="#" class="read-more"onclick="toggleMore(this); return false;">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>BaidehiJha</h3>
+        <p>Celebrating timeless elegance in every thread. Explore handcrafted ethnic fashion with modern grace.</p>
+      </div>
+      <div class="footer-col">
+       <h4>Quick Links</h4>
+      <ul>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#product">Shop</a></li>
+    <li><a href="index.html#new">New Arrivals</a></li>
+    <li><a href="index.html#product">Our Products</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+      </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-pinterest'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 <strong>BaidehiJha</strong>. All rights reserved.</p><p>Developer credit @shivanijhavats</p>
+    </div>
+  </footer>
+
+</body>
+</html>
