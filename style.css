@@ -275,7 +275,14 @@
         position: relative;
         overflow: hidden;
         background: var(--second-color);
-        
+        height: 450px; /* Ensure all boxes are of same height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+                
       
     }
     .new-arrival .box img{
@@ -284,6 +291,7 @@
         height: auto;
         object-fit: cover;
         display: block;
+        border-radius: 8px;
     }
     .new-arrival .box .content{
         position: absolute;
@@ -305,7 +313,13 @@
     .new-arrival .box:hover .content{
         top: 0;
         transition: 0.2s;
+        transform: scale(1.03);
     }
+    @media (max-width: 768px) {
+  .new-arrival .box {
+    height: 320px;
+   }
+   }
     .product-container{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(240px,auto));
@@ -316,8 +330,29 @@
         position:relative;
         padding: 10px;
         box-shadow: var(--box-shadow);
+         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: var(--box-shadow);
+        background-color: white;
+        border-radius: 8px;
+        min-height: 420px; 
 
     }
+    .product-container .box .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+    .product-container .box img {
+  width: 100%;
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Maintains aspect ratio and fills the box */
+  border-radius: 8px;
+}
     .product-container .box .content h2{
         font-size: 1.2rem;
         font-weight: 600;
@@ -383,6 +418,7 @@
 
     .swiper-wrapper {
     display: flex;
+    
     }
 
     .swiper-slide {
