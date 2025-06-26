@@ -537,3 +537,26 @@
   padding-top: 1rem;
   font-size: 0.9rem;
 }
+.about-section {
+  padding: 60px 20px;
+  background-color: #fdf9f5;
+  color: #3e2e2e;
+  font-family: 'Georgia', serif;
+}
+
+.about-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #6b4f2d;
+}
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
